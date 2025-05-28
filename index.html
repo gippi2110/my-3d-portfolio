@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      display: flex;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .photo {
+      flex: 1;
+      background: url('assets/images/profile.jpg') no-repeat center center/cover;
+      min-height: 400px;
+    }
+
+    .details {
+      flex: 2;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .details h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .details p {
+      margin-bottom: 0.5rem;
+      font-weight: 300;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .photo {
+        min-height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="photo"></div>
+    <div class="details">
+      <h1>Peddi Govardhan</h1>
+      <p><strong>Gender:</strong> Male</p>
+      <p><strong>Date of Birth:</strong> 24-10-2004</p>
+      <p><strong>Email:</strong> peddigovardhan3512@gmail.com</p>
+      <p><strong>Phone:</strong> +91-9177052636</p>
+    </div>
+  </div>
+</body>
+</html>
