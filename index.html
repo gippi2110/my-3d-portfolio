@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-R3BlNaXpzINrcQRMx4YZTz5lDq4kE5yBmhGz9F4ldkdcVGrM8Nq5zItYq0UbChcn3KqdcOCYVq1yq4UnZ1UbAQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     * {
       margin: 0;
@@ -18,8 +19,9 @@
       color: #fff;
       min-height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: start;
       padding: 2rem;
     }
 
@@ -32,6 +34,7 @@
       backdrop-filter: blur(10px);
       max-width: 900px;
       width: 100%;
+      margin-bottom: 2rem;
     }
 
     .photo {
@@ -58,12 +61,34 @@
       font-weight: 300;
     }
 
+    .profile-links {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .profile-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .profile-links a:hover {
+      color: #00ffcc;
+      transform: scale(1.2);
+    }
+
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
       }
       .photo {
         min-height: 250px;
+      }
+      .profile-links {
+        flex-wrap: wrap;
+        justify-content: center;
       }
     }
   </style>
@@ -72,12 +97,28 @@
   <div class="container">
     <div class="photo"></div>
     <div class="details">
-      <h1>Peddi Govardhan</h1>
-      <p><strong>Gender:</strong> Male</p>
-      <p><strong>Date of Birth:</strong> 24-10-2004</p>
-      <p><strong>Email:</strong> peddigovardhan3512@gmail.com</p>
-      <p><strong>Phone:</strong> +91-9177052636</p>
+      <h1>Your Name</h1>
+      <p><strong>Gender:</strong> Your Gender</p>
+      <p><strong>Date of Birth:</strong> DD-MM-YYYY</p>
+      <p><strong>Email:</strong> your.email@example.com</p>
+      <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
     </div>
+  </div>
+
+  <!-- Profile Links Section -->
+  <div class="profile-links">
+    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.codechef.com/users/yourusername" target="_blank" title="CodeChef">
+      <i class="fas fa-code"></i>
+    </a>
+    <a href="https://leetcode.com/yourusername" target="_blank" title="LeetCode">
+      <i class="fas fa-laptop-code"></i>
+    </a>
   </div>
 </body>
 </html>
